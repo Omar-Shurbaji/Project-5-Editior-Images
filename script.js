@@ -41,8 +41,8 @@ btn.addEventListener('click', function() {
         color2: "#3300ff",
         color3: "#111",
         color4: "#222",
-        icon: `<iconify-icon class="icon-2" icon="material-symbols:night-sight-auto" width="30" height="30" style="color: #999;"></iconify-icon>`,
-        icon2: `<iconify-icon class="icon-1" icon="material-symbols-light:light-mode" width="30" height="30" style="color: #555;"></iconify-icon>`
+        icon: `<iconify-icon class="icon-2" icon="material-symbols:night-sight-auto" style="color: #999;"></iconify-icon>`,
+        icon2: `<iconify-icon class="icon-1" icon="material-symbols-light:light-mode" style="color: #555;"></iconify-icon>`
     }
     color.push(object);
     localStorage.setItem("elements", JSON.stringify(color));
@@ -104,7 +104,7 @@ function showicon() {
         document.querySelector(".icon-2").style.cssText += 'transform: scale(0);' 
     }
     else {
-        document.querySelector('button').innerHTML = `<iconify-icon class="icon-1" icon="material-symbols-light:light-mode" width="30" height="30" style="color: #555;"></iconify-icon>`;
+        document.querySelector('button').innerHTML = `<iconify-icon class="icon-1" icon="material-symbols-light:light-mode" style="color: #555;"></iconify-icon>`;
     }
 }
 showicon();
